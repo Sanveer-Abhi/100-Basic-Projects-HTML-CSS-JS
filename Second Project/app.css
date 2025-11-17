@@ -57,18 +57,17 @@ body {
   background-color: white;
   border-radius: 50%;
   margin-left: 10px;
-  animation: loadingAnimation;
   animation: loadingAnimation 5s  0s infinite ;
 }
 
 .one{
-    animation-delay: 3s;
-}
-.two{
     animation-delay: 2s;
 }
-.three{
+.two{
     animation-delay: 1s;
+}
+.three{
+    animation-delay: 0.5s;
 }
 
 
