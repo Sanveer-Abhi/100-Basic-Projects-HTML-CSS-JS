@@ -1,0 +1,82 @@
+/* Basic CSS Reset */
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
+body {
+  height: 100vh;
+  width: 100%;
+
+  background: linear-gradient(
+    90deg,
+    rgba(39, 61, 81, 1) 0%,
+    rgba(33, 73, 115, 1) 16.667%,
+    rgba(34, 96, 152, 1) 33.333%,
+    rgba(43, 126, 184, 1) 50%,
+    rgba(57, 157, 205, 1) 66.667%,
+    rgba(73, 184, 209, 1) 83.333%,
+    rgba(89, 201, 196, 1) 100%
+  );
+  flex-direction: column;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+
+#ProjectName {
+  color: white;
+  font-size: 10vh;
+  margin-bottom: 8vh;
+  font-family: Arial, Helvetica, sans-serif;
+  font-style: oblique;
+}
+#ProjectName:hover {
+  -webkit-text-stroke: 2px yellow;
+  color: black;
+}
+
+#container {
+  height: 50vh;
+  width: 50%;
+  border-right: 2px solid rgba(255, 255, 255, 0.386);
+  overflow-x: hidden;
+  overflow-y: scroll;
+}
+
+#container::-webkit-scrollbar {
+  background-color: transparent;
+  width: 10px;
+}
+#container::-webkit-scrollbar-thumb {
+  background: linear-gradient(
+    180deg,
+    rgba(94, 17, 92, 1) 0%,
+    rgba(114, 38, 84, 1) 25%,
+    rgba(137, 76, 81, 1) 50%,
+    rgba(162, 128, 84, 1) 75%,
+    rgba(188, 187, 93, 1) 100%
+  );
+  border-radius: 100px;
+  cursor: auto;
+}
+
+.headings {
+  color: white;
+  font-family: "Gill Sans", "Gill Sans MT", Calibri, "Trebuchet MS", sans-serif;
+  font-size: 6vh;
+  border: 2px solid white;
+  margin-left: 25%;
+  margin-right: 25%;
+  margin-top: 10px;
+  text-align: center;
+  width: 50%;
+  border-radius: 100px;
+}
+
+.headings:hover{
+  -webkit-text-stroke: 2px white;
+  color: transparent;
+  cursor: pointer;
+}
