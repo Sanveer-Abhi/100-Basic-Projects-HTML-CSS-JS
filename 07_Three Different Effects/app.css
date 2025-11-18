@@ -1,0 +1,81 @@
+/* Basic CSS Reset */
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
+body {
+  min-height: 100vh;
+  width: 100%;
+  background-color: red;
+}
+
+#page1 {
+  position: relative;
+  height: 100vh;
+  width: 100%;
+  background-color: pink;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+
+.container {
+ position: relative;
+  overflow: hidden;
+  height: 90vh;
+  width: 80%;
+  border: 2px solid white;
+}
+
+.container #image img{
+    height: 100%;
+    object-fit: contain;
+    width: 100%;
+
+}
+
+.container article{
+    position: absolute;
+    top: 0;
+    left: 0;
+    height: 100%;
+    width: 100%;
+    background-color: black;
+    /* aligin text */
+    text-align: center;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    transform: translateX(-100%);
+    transition: all ease-in-out 1s;
+}
+.container article h1{
+    font-size: 7vh;
+    color: white;
+    font-family: 'Lucida Sans', 'Lucida Sans Regular', 'Lucida Grande', 'Lucida Sans Unicode', Geneva, Verdana, sans-serif;
+
+}
+.container article p{
+    margin-top: 10px;
+    width: 70%;
+    color: white;
+}
+.container:hover.container article{
+    transform: translateX(0);
+}
+
+#page2 {
+  position: relative;
+  height: 100vh;
+  width: 100%;
+  background-color: cyan;
+}
+#page3 {
+  position: relative;
+  height: 100vh;
+  width: 100%;
+  background-color: orange;
+}
