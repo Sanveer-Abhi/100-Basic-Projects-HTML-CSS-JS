@@ -1,0 +1,295 @@
+/* Basic CSS Reset */
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
+body {
+  height: 100vh;
+  width: 100%;
+  background-color: grey;
+}
+
+#main {
+  position: relative;
+  height: 100%;
+  width: 100%;
+  /* background-color: wheat; */
+  border: 2px solid green;
+}
+
+#grid-container {
+  position: relative;
+  display: grid;
+  height: 100vh;
+  width: 100%;
+  grid-template-columns: 1fr 1fr;
+  grid-template-rows: 1fr 1fr;
+  gap: 10px;
+}
+
+.items {
+  position: relative;
+  border-radius: 3%;
+  border: 2px solid white;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+}
+
+/* item1 */
+.item1 {
+  background-color: black;
+}
+.item1 h1 {
+  font-family: Impact, Haettenschweiler, "Arial Narrow Bold", sans-serif;
+  color: white;
+  font-size: 40px;
+  letter-spacing: 2px;
+  font-weight: 100;
+  transition: all ease-in-out 1s;
+}
+
+.item1 h1:hover {
+  -webkit-text-stroke: 2px white;
+  color: transparent;
+}
+
+.item1 a {
+  position: relative;
+  text-decoration: none;
+  color: white;
+  border: 2px solid white;
+  padding: 10px 15px;
+  margin-top: 10px;
+  border-radius: 50px;
+  font-weight: 700;
+  font-family: "Gill Sans", "Gill Sans MT", Calibri, "Trebuchet MS", sans-serif;
+  background-color: whea;
+  overflow: hidden;
+}
+
+.item1 a::before {
+  position: absolute;
+  left: 0;
+  top: 0;
+  padding: 10.5px 5px;
+  content: "Download";
+  color: black;
+  background-color: wheat;
+  transform: translateX(-100%);
+  transition: all ease-in-out 1.2s;
+}
+
+.item1 a:hover::before {
+  transform: translateX(0%);
+}
+
+/*  item2*/
+
+.item2 {
+  background-color: black;
+}
+.item2 h1 {
+  font-family: Impact, Haettenschweiler, "Arial Narrow Bold", sans-serif;
+  color: white;
+  font-size: 40px;
+  letter-spacing: 2px;
+  font-weight: 100;
+  transition: all ease-in-out 1s;
+}
+
+.item2 h1:hover {
+  -webkit-text-stroke: 2px white;
+  color: transparent;
+}
+
+.item2 a {
+  position: relative;
+  text-decoration: none;
+  color: white;
+  border: 2px solid white;
+  padding: 10px 15px;
+  margin-top: 10px;
+  border-radius: 50px;
+  font-weight: 700;
+  font-family: "Gill Sans", "Gill Sans MT", Calibri, "Trebuchet MS", sans-serif;
+  background-color: whea;
+  overflow: hidden;
+}
+
+.item2 a::before {
+  position: absolute;
+  left: 0;
+  top: 0;
+  padding: 10.5px 5px;
+  content: "Download";
+  color: black;
+  background-color: wheat;
+  transform: rotateX(270deg);
+  transform-origin: top;
+  transition: all ease-in-out 0.6s;
+}
+.item2 a::after {
+  position: absolute;
+  left: 0;
+  top: 0;
+  padding: 10.5px 5px;
+  content: "Download";
+  color: black;
+  background-color: yellow;
+  transform: rotateX(270deg);
+  transform-origin: top;
+  transition: all ease-in-out 1s;
+}
+
+.item2 a:hover::after,
+.item2 a:hover::before {
+  transform: rotateX(0deg);
+}
+
+
+/* item 3 */
+
+.item3 {
+  background-color: black;
+}
+.item3 h1 {
+  font-family: Impact, Haettenschweiler, "Arial Narrow Bold", sans-serif;
+  color: white;
+  font-size: 40px;
+  letter-spacing: 2px;
+  font-weight: 100;
+  transition: all ease-in-out 1s;
+}
+
+.item3 h1:hover {
+  -webkit-text-stroke: 2px white;
+  color: transparent;
+}
+
+.item3 a {
+  position: relative;
+  text-decoration: none;
+  background-color: white;
+  color: black;
+  border: 2px solid white;
+  padding: 10px 15px;
+  margin-top: 10px;
+  border-radius: 50px;
+  font-weight: 700;
+  font-family: "Gill Sans", "Gill Sans MT", Calibri, "Trebuchet MS", sans-serif;
+  overflow: hidden;
+}
+
+.item3 a::before {
+  position: absolute;
+  left: -3px;
+  top: -3px;
+  height: 100%;
+  width: 100%;
+  content: "";
+  color: black;
+  background-color: greenyellow;
+  transform-origin: top;
+  z-index: -1;
+  mix-blend-mode: multiply;
+  transition: all ease-in-out 0.6s;
+}
+.item3 a::after {
+  position: absolute;
+  left: 3px;
+  top: 3px;
+  height: 100%;
+  width: 100%;
+  content: "";
+  color: black;
+  background-color: red;
+  transform-origin: bottom;
+  z-index: -1;
+  mix-blend-mode: multiply;
+  transition: all ease-in 0.6s;
+}
+
+
+.item3 a:hover::before{
+  top: -6px;
+  left: 0px;
+  transform: perspective(1000px) rotateX(65deg);
+  z-index: 1;
+}
+.item3 a:hover::after{
+  top: 6px;
+  left: 0px;
+  transform: perspective(1000px) rotateX(-65deg);
+  z-index: 1;
+}
+
+/* item4 */
+.item4{
+  background-color: black;
+}
+.item4 h1 {
+  font-family: Impact, Haettenschweiler, "Arial Narrow Bold", sans-serif;
+  color: white;
+  font-size: 40px;
+  letter-spacing: 2px;
+  font-weight: 100;
+  transition: all ease-in-out 1s;
+}
+
+.item4 h1:hover {
+  -webkit-text-stroke: 2px white;
+  color: transparent;
+}
+
+
+.item4 button{
+  position: relative;
+  height: 70px;
+  width: 140px;
+  font-size: large;
+  margin-top: 20px;
+  background-color: purple;
+  text-decoration: none;
+  color: white;
+}
+
+.item4 button::before{
+  content: "";
+  height: 24px;
+  width: 24px;
+  position: absolute;
+  /* background-color: red; */
+  top:-15%;
+  left: -7%;
+  border-top: 4px solid rgb(124, 124, 241);
+  border-left: 4px solid rgb(124, 124, 241);
+  transition: all ease-in-out 1s;
+}
+
+.item4 button:hover::before{
+  height: 90%;
+  width: 90%;
+
+}
+.item4 button::after{
+  content: "";
+  height: 24px;
+  width: 24px;
+  position: absolute;
+  /* background-color: red; */
+  bottom:-15%;
+  right: -7%;
+  border-bottom: 4px solid rgb(22, 241, 241);
+  border-right: 4px solid rgb(22, 241, 241);
+  transition: all ease-in-out 1s;
+}
+
+.item4 button:hover::after{
+  height: 90%;
+  width: 90%;
+
+}
