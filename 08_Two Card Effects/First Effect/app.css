@@ -1,0 +1,71 @@
+/* Basic CSS Reset */
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
+body {
+  height: 100vh;
+  width: 100%;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  background: linear-gradient(
+    90deg,
+    rgba(164, 116, 81, 1) 0%,
+    rgba(156, 152, 129, 1) 16.667%,
+    rgba(115, 160, 157, 1) 33.333%,
+    rgba(59, 137, 154, 1) 50%,
+    rgba(9, 91, 121, 1) 66.667%,
+    rgba(0, 40, 71, 1) 83.333%,
+    rgba(0, 1, 22, 1) 100%
+  );
+}
+
+#container{
+    height: 75vh;
+    width: 30%;
+    border: 2px solid snow;
+    border-radius: 20px;
+    position: relative;
+    background-color: orange;
+    display: flex;
+    flex-direction: column;
+    justify-content: flex-start;
+    align-items: center;
+}
+
+#container h1{
+    font-size: 6vw;
+    text-align: left;
+    margin-left: 50px;
+    width: 100%;
+    font-family:'Gill Sans', 'Gill Sans MT', Calibri, 'Trebuchet MS', sans-serif ;
+    color: white;
+    z-index: 2;
+}
+
+#container p{
+    width: 90%;
+    margin-top: 40px;
+    font-size: 1.2vw;
+    z-index: 2;
+}
+
+#color-box{
+    position: absolute;
+    height: 1.5%;
+    width: 80%;
+    bottom: 0;
+
+    z-index: 1;
+    background-color: red;
+    transition: all ease-in-out 0.4s;
+}
+
+#container:hover #color-box {
+height: 100%;
+width: 100%;
+    border-radius: 20px;
+}
