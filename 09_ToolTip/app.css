@@ -1,0 +1,54 @@
+/* Basic CSS Reset */
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
+body {
+  height: 100vh;
+  width: 100%;
+  background: linear-gradient(
+    90deg,
+    rgba(235, 251, 229, 1) 0%,
+    rgba(164, 184, 163, 1) 25%,
+    rgba(126, 166, 141, 1) 50%,
+    rgba(147, 211, 182, 1) 75%,
+    rgba(212, 255, 250, 1) 100%
+  );
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  font-family: 'Gill Sans', 'Gill Sans MT', Calibri, 'Trebuchet MS', sans-serif;
+}
+
+
+#container{
+    height: 20%;
+    width:20%;
+    position: relative;
+    background-color: red;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    font-size: 2.5vw;
+    border-radius: 20px;
+}
+
+#tool-tip{
+    color: white;
+    position: absolute;
+    background-color: orange;
+    padding: 10px;
+    border-radius: 30px;
+    top: -80%;
+    transition: all ease-in-out 0.7s;
+    opacity: 0;
+}
+#container:hover #tool-tip{
+    color: red;
+    opacity: 1;
+}
+
+
+
