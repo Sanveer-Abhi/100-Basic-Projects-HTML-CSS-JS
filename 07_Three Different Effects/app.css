@@ -130,4 +130,82 @@ body {
   height: 100vh;
   width: 100%;
   background-color: orange;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+
+.container3 {
+  position: relative;
+  overflow: hidden;
+  height: 90vh;
+  width: 80%;
+  border: 2px solid white;
+}
+.container3 #image {
+  position: relative;
+  height: 100%;
+  width: 100%;
+}
+.container3 #image img {
+  height: 100%;
+  object-fit: cover;
+  width: 100%;
+  transition: all ease-in-out 1s;
+}
+
+.container3 article {
+  position: absolute;
+  border-top: 10px solid red;
+  background-color: wheat;
+  color: white;
+  height: 0%;
+  width: 80%;
+  left: 10%;
+  bottom: 0;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  flex-direction: column;
+  transition: all ease-in-out 0.8s;
+}
+
+.container3:hover.container3 article {
+  height: 100%;
+  width: 100%;
+  left: 0;
+}
+
+.container3 article h1 {
+  -webkit-text-stroke: 2px white;
+  color: rgb(247, 70, 247);
+  font-size: 8vw;
+  opacity: 0;
+  transition: all ease-in-out 1s;
+}
+
+.container3:hover.container3 article h1 {
+  opacity: 1;
+}
+.container3 article h4 {
+  color: black;
+  font-size: 2vw;
+  font-family: "Segoe UI", Tahoma, Geneva, Verdana, sans-serif;
+  opacity: 0;
+  transition: all ease-in-out 1.2s;
+}
+
+.container3:hover.container3 article h4 {
+  opacity: 1;
+}
+.container3 article p {
+  width: 70%;
+  color: black;
+  text-align: center;
+  opacity: 0;
+  transition: all ease-in-out 1.4s;
+}
+
+.container3:hover.container3 article p {
+  opacity: 1;
 }
