@@ -1,0 +1,79 @@
+/* Basic CSS Reset */
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
+body {
+  font-family: "Segoe UI", Tahoma, Geneva, Verdana, sans-serif;
+  background-color: black;
+  color: white;
+  height: 100vh;
+  width: 100%;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+
+#imagebox {
+  position: relative;
+  height: 100%;
+  width: 100%;
+  background-image: url(assets/game_of_thrones_poster_4k_hd-1366x768.jpg);
+  background-size: cover;
+}
+
+#playIcon {
+  padding: 10px;
+  border-radius: 50%;
+  border: 4px solid black;
+  position: absolute;
+  right: 10%;
+  bottom: 10%;
+  background-color: lightgray;
+  animation: bounce 1.7s ease-in-out none infinite;
+}
+#playIcon img {
+  height: 100px;
+  width: 100px;
+}
+
+@keyframes bounce {
+  0% {
+    transform: translateY(0%);
+  }
+  50% {
+    transform: translateY(-20%);
+  }
+  100% {
+    transform: translateY(1%);
+  }
+}
+
+.trailor-box {
+  height: 100%;
+  width: 100%;
+  position: absolute;
+  top: 0%;
+  left: 0;
+  border: 2px solid white;
+  z-index: -1;
+}
+
+.trailor-box video {
+  /* margin-top: 5%; */
+  height: 100%;
+  width: 100%;
+}
+
+.trailor-box #cross {
+  position: absolute;
+  top: 0;
+  right: 2%;
+  font-size: 2vw;
+}
+
+.active {
+  z-index: 2;
+}
