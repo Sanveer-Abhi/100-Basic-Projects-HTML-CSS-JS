@@ -41,5 +41,5 @@ operations.addEventListener("click", function (e) {
       return;
   }
 
-  result.textContent = `Result : ${answer}`;
+  result.textContent = `Result of ${ident}: ${answer}`;
 });

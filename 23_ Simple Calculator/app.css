@@ -65,7 +65,7 @@ body {
   display: flex;
   justify-content: center;
   align-items: center;
-  border: 2px solid black;
+  /* border: 2px solid black; */
   border-radius: 40px;
   box-shadow: 2px 2px 4px rgba(0, 0, 0, 0.8);
   animation: lifter 2s ease-in-out none infinite;
@@ -98,7 +98,7 @@ body {
 }
 
 .box {
-  border-top: 1px solid black;
+  /* border-top: 1px solid black; */
   display: flex;
   justify-content: center;
   align-items: center;
@@ -107,7 +107,7 @@ body {
   width: 100%;
   margin-top: 10px;
   border-radius: 50px;
-  box-shadow: 1px 1px 2px rgba(0, 0, 0, 0.8);
+  /* box-shadow: 1px 1px 2px rgba(0, 0, 0, 0.8); */
 }
 
 .box p {
@@ -165,7 +165,8 @@ body {
 }
 
 .result {
-  margin-top: 50px;
+  margin-top: 40px;
+  margin-bottom: 10px;
   padding: 10px;
   position: relative;
   height: 90px;
@@ -176,7 +177,7 @@ body {
   font-size: 40px;
   font-family: "DynaPuff", system-ui;
   font-optical-sizing: auto;
-  font-weight: 800;
+  font-weight: 300;
   font-style: normal;
   font-variation-settings:
     "wdth" 100;
