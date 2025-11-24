@@ -1,0 +1,89 @@
+/* Basic CSS Reset */
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
+body {
+  font-family: "Segoe UI", Tahoma, Geneva, Verdana, sans-serif;
+  background-color: black;
+  color: white;
+  height: 100vh;
+  width: 100%;
+}
+
+#main {
+  position: relative;
+  height: 100%;
+  width: 100%;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  flex-direction: column;
+  background-color: rgb(71, 91, 124);
+}
+
+.box {
+  height: 45%;
+  width: 90%;
+  border: 2px solid;
+  border-radius: 20px;
+  margin: 1%;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  flex-direction: column;
+
+  background: linear-gradient(
+    45deg,
+    rgba(14, 46, 75, 1) 0%,
+    rgba(14, 46, 75, 1) 7.692%,
+    rgba(19, 52, 84, 1) 7.692%,
+    rgba(19, 52, 84, 1) 15.385%,
+    rgba(25, 58, 94, 1) 15.385%,
+    rgba(25, 58, 94, 1) 23.077%,
+    rgba(31, 65, 104, 1) 23.077%,
+    rgba(31, 65, 104, 1) 30.769%,
+    rgba(38, 72, 115, 1) 30.769%,
+    rgba(38, 72, 115, 1) 38.462%,
+    rgba(45, 79, 126, 1) 38.462%,
+    rgba(45, 79, 126, 1) 46.154%,
+    rgba(52, 86, 138, 1) 46.154%,
+    rgba(52, 86, 138, 1) 53.846%,
+    rgba(59, 93, 150, 1) 53.846%,
+    rgba(59, 93, 150, 1) 61.538%,
+    rgba(67, 101, 163, 1) 61.538%,
+    rgba(67, 101, 163, 1) 69.231%,
+    rgba(75, 109, 176, 1) 69.231%,
+    rgba(75, 109, 176, 1) 76.923%,
+    rgba(83, 117, 188, 1) 76.923%,
+    rgba(83, 117, 188, 1) 84.615%,
+    rgba(91, 125, 201, 1) 84.615%,
+    rgba(91, 125, 201, 1) 92.308%,
+    rgba(99, 134, 214, 1) 92.308% 100%
+  );
+}
+
+.box h1 {
+  font-size: 3vw;
+}
+
+.box textarea {
+  margin: 20px;
+  height: 50px;
+  border-radius: 10px;
+  text-align: center;
+  padding: 10px;
+  font-size: 20px;
+}
+
+.box button {
+  height: 50px;
+  width: 130px;
+  font-size: 25px;
+  padding: 5px;
+  border-radius: 10px;
+  background-color: orange;
+  text-transform: uppercase;
+}
