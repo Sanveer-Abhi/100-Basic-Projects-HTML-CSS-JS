@@ -1,4 +1,6 @@
 /* Basic CSS Reset */
+@import url("https://fonts.googleapis.com/css2?family=Bungee+Spice&family=Lobster&family=Stack+Sans+Notch:wght@200..700&display=swap");
+@import url("https://fonts.googleapis.com/css2?family=Bungee+Spice&family=DynaPuff:wght@400..700&family=Lobster&family=Stack+Sans+Notch:wght@200..700&display=swap");
 * {
   margin: 0;
   padding: 0;
@@ -7,8 +9,185 @@
 
 body {
   font-family: "Segoe UI", Tahoma, Geneva, Verdana, sans-serif;
-  background-color: black;
+  background: conic-gradient(
+    from 45deg,
+    rgba(86, 71, 104, 1) 0deg,
+    rgba(87, 103, 156, 1) 60deg,
+    rgba(147, 174, 183, 1) 120deg,
+    rgba(208, 218, 151, 1) 180deg,
+    rgba(210, 194, 100, 1) 240deg,
+    rgba(151, 124, 96, 1) 300deg,
+    rgba(89, 74, 143, 1) 360deg
+  );
   color: white;
   height: 100vh;
   width: 100%;
+}
+
+#cal-icon img {
+  height: 50px;
+  width: 50px;
+  position: absolute;
+  top: 10%;
+  left: 10%;
+  animation: rotater 5s ease-in-out none infinite;
+}
+
+@keyframes rotater {
+  0% {
+    transform: rotate(0deg);
+  }
+  50% {
+    transform: rotate(1400deg);
+  }
+  100% {
+    transform: rotate(0deg);
+  }
+}
+
+#container {
+  height: 80vh;
+  width: 30%;
+  /* background-color: red; */
+  position: absolute;
+  top: 50%;
+  left: 50%;
+  transform: translate(-50%, -50%);
+  /* border: 2px solid; */
+  border-radius: 2%;
+  padding: 20px;
+  box-shadow: 2px 4px 4px rgba(0, 0, 0, 0.8);
+}
+
+#heading {
+  margin-bottom: 30px;
+  position: relative;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  border: 2px solid black;
+  border-radius: 40px;
+  box-shadow: 2px 2px 4px rgba(0, 0, 0, 0.8);
+  animation: lifter 2s ease-in-out none infinite;
+}
+@keyframes lifter {
+  0% {
+    transform: translateY(0%);
+  }
+  50% {
+    transform: translateY(-5%);
+  }
+  100% {
+    transform: translateY(0%);
+  }
+}
+
+#heading h1 {
+  font-size: 3vw;
+  margin-right: 30px;
+  font-family: "Bungee Spice", sans-serif;
+  font-weight: 400;
+  font-style: normal;
+  text-shadow: 2px 2px 4px rgba(0, 0, 0, 0.8);
+}
+#heading img {
+  height: 40px;
+  width: 40px;
+  object-fit: cover;
+  background-color: transparent;
+}
+
+.box {
+  border-top: 1px solid black;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  flex-direction: column;
+  height: 100px;
+  width: 100%;
+  margin-top: 10px;
+  border-radius: 50px;
+  box-shadow: 1px 1px 2px rgba(0, 0, 0, 0.8);
+}
+
+.box p {
+  font-size: 2vw;
+  font-family: "Bungee Spice", sans-serif;
+  font-weight: 400;
+  font-style: normal;
+  text-shadow: 2px 2px 4px rgba(0, 0, 0, 0.8);
+  margin-bottom: 20px;
+}
+
+
+.box input {
+  border-radius: 20px;
+  height: 30px;
+  border: none;
+  font-weight: 1000;
+  text-align: center;
+  font-family: "Lucida Sans", "Lucida Sans Regular", "Lucida Grande",
+    "Lucida Sans Unicode", Geneva, Verdana, sans-serif;
+  box-shadow: 2px 2px 4px rgba(0, 0, 0, 0.8);
+  margin-bottom: 10px;
+}
+.box input[type="number"]::-webkit-outer-spin-button {
+  -webkit-appearance: none;
+  margin: 0;
+}
+
+#operations {
+  height: 100px;
+  width: 100%;
+  /* border: 2px solid; */
+  margin-top: 30px;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  gap: 10px;
+}
+
+#operations .operations-img {
+  height: 70px;
+  width: 70px;
+  /* background-color: red; */
+}
+#operations .operations-img img {
+  height: 70px;
+  width: 70px;
+  padding: 5px;
+  box-shadow: 2px 2px 4px rgba(0, 0, 0, 0.8);
+  transition: all ease-in-out 0.5s;
+  /* background-color: red; */
+}
+.operations-img img:hover {
+  transform: translateY(-5px);
+}
+
+.result {
+  margin-top: 50px;
+  padding: 10px;
+  position: relative;
+  height: 90px;
+  width: 100%;
+  /* border: 2px solid; */
+  font-size: 1vw;
+  text-align: center;
+  font-size: 40px;
+  font-family: "DynaPuff", system-ui;
+  font-optical-sizing: auto;
+  font-weight: 800;
+  font-style: normal;
+  font-variation-settings:
+    "wdth" 100;
+  border-radius: 50px;
+  box-shadow: 2px 2px 4px rgba(0, 0, 0, 0.8);
+  opacity: 0;
+  color: black;
+  transition: opacity ease-in-out 1s;
+  overflow:inherit;
+}
+
+.active {
+  opacity: 1;
 }
