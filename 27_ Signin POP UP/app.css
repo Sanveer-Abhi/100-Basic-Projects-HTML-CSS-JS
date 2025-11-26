@@ -1,0 +1,214 @@
+/* Basic CSS Reset */
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
+body {
+  font-family: "Segoe UI", Tahoma, Geneva, Verdana, sans-serif;
+  background-color: black;
+  color: white;
+  height: 100vh;
+  width: 100%;
+  background: url(assets/backgroound.jpeg) no-repeat center center/cover;
+
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  flex-direction: column;
+}
+
+#heading {
+  height: 15vh;
+  /* border: 2px solid; */
+  width: 60%;
+  color: white;
+  text-align: center;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  font-size: 9.3vh;
+  text-shadow: 2px 2px 4px rgba(0, 0, 0, 0.7);
+  transition: all ease-in-out 2s;
+}
+
+#details {
+  height: 10vh;
+  width: 40%;
+  /* border: 2px solid; */
+  text-align: center;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  font-weight: 600;
+  margin-top: 3vh;
+  margin-bottom: 10vh;
+  text-shadow: 2px 2px 4px rgba(0, 0, 0, 0.7);
+  transition: all ease-in-out 2s;
+}
+
+#signin {
+  border: 2px solid;
+  height: 7vh;
+  width: 10%;
+  background-color: crimson;
+  border: none;
+  border-radius: 50px;
+  color: white;
+  font-size: 18px;
+  text-shadow: 2px 2px 4px rgba(0, 0, 0, 0.5);
+  box-shadow: 0 4px 20px rgba(0, 0, 0, 0.8);
+  font-weight: 500;
+  z-index: 1;
+  transition: all ease-in-out 2s;
+}
+
+.active {
+  opacity: 0;
+}
+
+#container {
+  height: 90%;
+  width: 50%;
+  position: absolute;
+  top: 5%;
+  left: 5%;
+  opacity: 0;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  flex-direction: column;
+  background: url(assets/login.jpeg);
+  border-radius: 20px;
+  transition: all ease-in-out 3s;
+}
+
+#container.show {
+  /* height: 100%;
+  width: 50%; */
+  background-repeat: no-repeat;
+  background-size: cover;
+  background-position: center;
+  /* border: 2px solid; */
+  box-shadow: 0 15px 50px rgba(0, 0, 0, 0.9), inset 0 0 30px rgba(0, 0, 0, 0.8);
+  background-color: red;
+  opacity: 1;
+}
+
+.giant-heading {
+  position: absolute;
+  top: 10%;
+  right: 10%;
+  font-size: 4vw;
+  text-shadow: 3px 3px 6px rgba(0, 0, 0, 0.8);
+  font-family: "Georgia", serif;
+  color: white;
+  font-weight: bold;
+  font-style: italic;
+  opacity: 0;
+  transition: all ease-in-out 2s;
+}
+
+.giant-heading.active2 {
+  opacity: 1;
+}
+
+.close-icon {
+  height: 60px;
+  width: 60px;
+  position: absolute;
+  top: 0%;
+  left: 0;
+  background-color: transparent;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  border-radius: 50px;
+  font-weight: 900;
+  font-size: 40px;
+  opacity: 0;
+  z-index: 2;
+  transition: all ease-in 2s;
+}
+
+.close-icon.active3 {
+  opacity: 1;
+}
+
+.boxes {
+  position: relative;
+  height: 15vh;
+  width: 60%;
+  margin-bottom: 5%;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  flex-direction: column;
+  gap: 10px;
+
+  /* Spider‑Man theme: red/blue gradient, subtle web texture and spider emblem */
+  border-radius: 18px;
+  border: 2px solid rgba(255, 255, 255, 0.08);
+  overflow: hidden;
+  background: url("assets/spider.png") right 12% center / 8% no-repeat,
+    linear-gradient(135deg, #e02a2a 0%, #0b3d91 100%),
+    repeating-linear-gradient(
+      45deg,
+      rgba(255, 255, 255, 0.04) 0 1px,
+      transparent 1px 28px
+    ),
+    radial-gradient(
+      circle at 15% 15%,
+      rgba(255, 255, 255, 0.06),
+      transparent 8%
+    );
+  box-shadow: 0 10px 30px rgba(11, 61, 145, 0.35),
+    0 0 30px rgba(224, 42, 42, 0.18), inset 0 0 18px rgba(0, 0, 0, 0.6);
+  transition: transform 0.35s ease, box-shadow 0.35s ease, filter 0.35s ease;
+  filter: saturate(1.05);
+
+  /* hover effect to give a webby lift */
+  cursor: default;
+}
+
+.boxes p {
+  font-size: 2vw;
+  text-shadow: 2px 2px 6px rgba(255, 0, 0, 0.85), 0 0 12px rgba(255, 0, 0, 0.45);
+  font-family: "Georgia", serif;
+}
+
+.boxes input {
+  border-radius: 20px;
+  height: 20px;
+  text-align: center;
+  border: none;
+  box-shadow: 0 0 15px rgba(0, 0, 0, 0.8), 0 0 25px rgba(0, 102, 204, 0.6);
+}
+
+#account-box {
+  height: 10vh;
+  width: 50%;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  background: linear-gradient(135deg, #dc143c, #8b0000);
+  border: 2px solid #ff4500;
+  border-radius: 20px;
+  color: white;
+  font-size: 2vw;
+  font-weight: bold;
+  font-family: "Georgia", serif;
+  text-shadow: 2px 2px 6px rgba(255, 69, 0, 0.9);
+  box-shadow: 0 0 20px rgba(220, 20, 60, 0.8), inset 0 0 10px rgba(0, 0, 0, 0.5);
+  cursor: pointer;
+  transition: all ease-in-out 0.3s;
+}
+#account-box:hover {
+  transform: translateY(-5px);
+  background: linear-gradient(135deg, #ff1744, #c41c3b);
+  box-shadow: 0 8px 25px rgba(220, 20, 60, 0.9),
+    inset 0 0 10px rgba(0, 0, 0, 0.5);
+}
+
+
