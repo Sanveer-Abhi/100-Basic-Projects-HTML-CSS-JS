@@ -76,11 +76,12 @@ body {
   position: absolute;
   left: 2%;
   top: 5%;
+  pointer-events: none;
 }
 
 .form-control label span {
   display: inline-block;
-  font-size: 18px;
+  font-size: 15px;
   min-width: 5px;
   transition: 0.4s all ease-in-out;
 }
