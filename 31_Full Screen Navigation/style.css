@@ -1,0 +1,131 @@
+/* Basic CSS Reset */
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
+body {
+  font-family: "Segoe UI", Tahoma, Geneva, Verdana, sans-serif;
+  background: url(assets/background.jpg);
+  background-repeat: no-repeat;
+  background-size: cover;
+  background-position: center;
+  color: white;
+  height: 100vh;
+  width: 100%;
+}
+
+#heading {
+  border-radius: 20px;
+  position: absolute;
+  width: 23%;
+  height: 15%;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  font-size: 70px;
+  top: 50%;
+  left: 50%;
+  transform: translate(-50%, -50%);
+  font-family: sans-serif;
+  color: #fff;
+
+  /* Dark, layered box-shadow for max depth */
+  background: rgba(
+    0,
+    0,
+    0,
+    0.15
+  ); /* subtle tint so red doesn't bleed through */
+  box-shadow: 0px 8px 20px rgba(0, 0, 0, 0.7), 0px 20px 40px rgba(0, 0, 0, 0.6),
+    0px 40px 60px rgba(0, 0, 0, 0.4);
+}
+
+#icon {
+  height: 60px;
+  width: auto;
+  position: absolute;
+  top: 2%;
+  left: calc(100vw - 10vw);
+  background-color: white;
+  border-radius: 50px;
+  transition: transform 0.25s ease, box-shadow 0.25s ease;
+  /* Dark, soft, clean shadow */
+  box-shadow: 0px 6px 15px rgba(0, 0, 0, 0.35),
+    0px 12px 30px rgba(0, 0, 0, 0.25);
+  z-index: 5;
+}
+
+#icon:hover {
+  /* 3D pop-out effect */
+  transform: translateY(-6px) scale(1.05);
+  /* Deeper shadow when hovering */
+  box-shadow: 0px 12px 25px rgba(0, 0, 0, 0.45),
+    0px 20px 45px rgba(0, 0, 0, 0.35);
+}
+
+#switch {
+  display: none;
+}
+#box {
+  position: absolute;
+  display: flex;
+  background: url(assets/snoopy\ wallpaper.jpeg);
+  background-size: cover;
+  background-position: center;
+  background-repeat: no-repeat;
+  height: 100%;
+  width: 100%;
+  justify-content: center;
+  align-items: center;
+  flex-direction: column;
+  clip-path: circle(10px at calc(100vw - 8vw) 40px);
+  transition: all ease-in-out 0.5s;
+}
+
+#box li {
+  list-style: none;
+  color: black;
+  font-size: 40px;
+  margin: 5px;
+  border-bottom: 2px solid;
+  padding: 8px 12px;
+  z-index: 2;
+
+  /* Upgraded aesthetics */
+  background: rgba(255, 255, 255, 0.6);
+  backdrop-filter: blur(4px);
+  border-radius: 12px;
+
+  /* Soft shadow for depth */
+  box-shadow: 0px 4px 10px rgba(0, 0, 0, 0.15), 0px 8px 20px rgba(0, 0, 0, 0.1);
+
+  /* Smooth transitions */
+  transition: transform 0.4s ease, box-shadow 0.4s ease, background 0.4s ease,
+    color 0.4s ease;
+}
+
+#box li:hover {
+  /* Slight lift → 3D effect */
+  transform: translateY(-3px);
+
+  /* More shadow on hover */
+  box-shadow: 0px 8px 18px rgba(0, 0, 0, 0.25), 0px 12px 30px rgba(0, 0, 0, 0.2);
+
+  /* Highlight state */
+  background: rgba(255, 255, 255, 0.9);
+  color: #d00000; /* red highlight (optional, tweakable) */
+  border-bottom-color: #d00000;
+}
+
+#focus {
+  position: absolute;
+  top: 0;
+  height: 0px;
+  width: 0px;
+  background-color: white;
+  z-index: 1;
+  border-radius: 30px;
+  transition: all ease-in-out 0.2s;
+}
