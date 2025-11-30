@@ -1,0 +1,31 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Dynamic Text Formatter</title>
+    <link rel="stylesheet" href="style.css" />
+  </head>
+  <body>
+    <button id="theme-toggle">Toggle Theme</button>
+
+    <div id="container">
+      <h1 id="heading">Type In Your Words</h1>
+      <div id="text-area">
+        <input type="text" placeholder="Enter Your Text" />
+      </div>
+      <div id="options">
+        <div class="box" id="uppercase" data-label="Uppercase">ABC</div>
+        <div class="box" id="lowercase" data-label="Lowercase">abc</div>
+        <div class="box" id="italic" data-label="Italic">/Abc</div>
+        <div class="box" id="bold" data-label="Bold">Bold</div>
+        <div class="box" id="capitalize" data-label="Capitalize">Abc</div>
+      </div>
+      <div id="output">
+        <div id="result">Output</div>
+      </div>
+    </div>
+
+    <script src="app.js"></script>
+  </body>
+</html>
