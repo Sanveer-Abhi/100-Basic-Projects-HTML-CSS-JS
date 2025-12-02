@@ -1,0 +1,70 @@
+/* RESET */
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
+body {
+  font-family: "Segoe UI", Tahoma, Geneva, Verdana, sans-serif;
+  background-color: black;
+  color: white;
+  height: 100vh;
+  width: 100%;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+
+/* MAIN WRAPPER */
+#main {
+  height: 80%;
+  width: 98%;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  gap: 12px;
+}
+
+/* IMAGE BACKGROUNDS */
+.bg-image {
+  background-size: cover;
+  background-position: center;
+  background-repeat: no-repeat;
+}
+
+/* SLIDE BASE DESIGN */
+.slide {
+  position: relative;
+  flex: 0.5;
+  height: 100%;
+  border-radius: 12px;
+  overflow: hidden;
+  transition: all 0.6s ease-in-out;
+}
+
+/* HOVER EFFECT (ZOOM + LIFT) */
+.slide:hover {
+  transform: translateY(-5px) scale(1.08);
+  z-index: 10;
+}
+
+/* ACTIVE STATE (SELECTED SLIDE EXPANDS) */
+.slide.active {
+  flex: 40%;
+}
+
+
+
+/* HOVER MAKES THE OVERLAY VISIBLE */
+.slide:hover::before {
+  opacity: 1;
+}
+
+/* INDIVIDUAL IMAGES */
+.image1 { background-image: url("assets/1.png"); }
+.image2 { background-image: url("assets/2.png"); }
+.image3 { background-image: url("assets/3.png"); }
+.image4 { background-image: url("assets/4.png"); }
+.image5 { background-image: url("assets/5.png"); }
+.image6 { background-image: url("assets/6.png"); }
