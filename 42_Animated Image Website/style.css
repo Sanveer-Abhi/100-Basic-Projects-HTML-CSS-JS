@@ -1,0 +1,105 @@
+/* Basic CSS Reset */
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
+body {
+  font-family: "Segoe UI", Tahoma, Geneva, Verdana, sans-serif;
+  background-color: black;
+  color: white;
+  height: 100vh;
+  width: 100%;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  gap: 5px;
+  overflow: hidden;
+}
+
+.containers {
+  height: 100%;
+  width: 50%;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  /* border: 2px solid; */
+  padding: 40px;
+  position: relative;
+}
+
+.container1 {
+  flex-direction: column;
+  gap: 20px;
+  background-color: white;
+}
+
+.container1 h1 {
+  font-size: 3vw;
+  width: 80%;
+  color: black;
+}
+.container1 p {
+  width: 80%;
+  margin-top: 50px;
+  color: black;
+}
+.container1 h4 {
+  margin-top: 80px;
+  width: 80%;
+  text-align: center;
+  background-color: #222;
+  height: 40px;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  border-radius: 50px;
+}
+
+.container1 ul {
+  position: absolute;
+  bottom: 10%;
+  left: 10%;
+  height: 50px;
+  width: 150px;
+  /* background-color: red; */
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  gap: 10px;
+}
+
+.btns {
+  height: 30px;
+  width: 30px;
+  list-style: none;
+  background-color: grey;
+  border-radius: 50%;
+}
+
+.btns.active {
+  background-color: black;
+}
+
+.container2 {
+  background: url(assets/0.png);
+  background-size: cover;
+  background-position: center;
+  background-repeat: no-repeat;
+}
+
+.zoom {
+  animation: zoom 1s ease-in none 1;
+}
+
+@keyframes zoom {
+  0% {
+    opacity: 0;
+    transform: scale(1.05);
+  }
+  100% {
+    opacity: 1;
+    transform: scale(1);
+  }
+}
