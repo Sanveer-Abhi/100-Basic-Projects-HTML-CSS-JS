@@ -10,7 +10,7 @@ body {
   min-height: 100vh;
   width: 100%;
   /* overflow: hidden; */
-  animation: website-appear-animation 1s ease-in 1;
+  /* animation: website-appear-animation 1s ease-in 1; */
 }
 @keyframes website-appear-animation {
   0% {
@@ -280,6 +280,260 @@ body {
   /* background-color: red; */
 }
 
-#page2-icons .icons{
-    font-size: 2rem;
+#page2-icons .icons {
+  font-size: 2rem;
+}
+
+#page3 {
+  height: 100vh;
+  width: 100%;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  gap: 5%;
+}
+
+#page3-left-part {
+  height: 100%;
+  width: 45%;
+
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+#page3-left-image-circle {
+  height: 500px;
+  width: 500px;
+  background: url(assets/0.png) no-repeat center/cover;
+  border-radius: 50%;
+}
+
+#page3-right-part {
+  position: relative;
+  height: 100%;
+  width: 45%;
+
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  flex-direction: column;
+}
+
+#page3-heading-container {
+  height: 15%;
+  width: 100%;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  font-size: 5rem;
+  font-weight: 900;
+  margin-bottom: 20px;
+}
+#page3-heading-container span {
+  color: grey;
+}
+
+#page3-para-container {
+  height: 12%;
+  width: 84%;
+  padding: 0px 10px;
+}
+#page3-items-container {
+  height: 63%;
+  width: 100%;
+  position: relative;
+}
+
+#page3-items-part {
+  position: relative;
+  height: 50%;
+  width: 100%;
+  padding: 0px 20px;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+
+  gap: 5%;
+}
+
+.page3boxes {
+  position: relative;
+  height: 80%;
+  width: 45%;
+
+  padding: 20px;
+}
+
+.special-box {
+  background-color: rgb(205, 202, 202);
+}
+
+.page3boxes h1 {
+  margin-bottom: 10px;
+}
+.page3boxes p {
+  color: rgb(88, 76, 76);
+}
+
+#page4 {
+  height: 100vh;
+  width: 100%;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  gap: 5%;
+}
+
+#page4-right-part {
+  height: 100%;
+  width: 45%;
+
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+#page4-right-image-circle {
+  height: 500px;
+  width: 500px;
+  background: url(assets/0.png) no-repeat center/cover;
+  border-radius: 50%;
+}
+
+#page4-left-part {
+  position: relative;
+  height: 100%;
+  width: 45%;
+
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  flex-direction: column;
+}
+
+#page4-heading-container {
+  height: 15%;
+  width: 100%;
+  display: flex;
+  justify-content: flex-start;
+  align-items: center;
+  font-size: 5rem;
+  font-weight: 900;
+  padding-left: 60px;
+  margin-bottom: 20px;
+}
+#page4-heading-container span {
+  color: grey;
+}
+
+#page4-para-container {
+  height: 12%;
+  width: 84%;
+  padding: 0px 10px;
+}
+#page4-items-container {
+  height: 63%;
+  width: 100%;
+  position: relative;
+  padding-left: 30px;
+}
+
+#page4-items-part {
+  position: relative;
+  height: 50%;
+  width: 100%;
+  padding: 0px 20px;
+  display: flex;
+  justify-content: flex-start;
+  align-items: center;
+
+  gap: 5%;
+}
+
+.page4boxes {
+  position: relative;
+  height: 80%;
+  width: 45%;
+  background-color: rgb(205, 202, 202);
+
+  padding: 20px;
+}
+
+.page4boxes h1 {
+  margin-bottom: 10px;
+}
+.page4boxes p {
+  color: rgb(88, 76, 76);
+}
+
+#page5 {
+  height: 100vh;
+  width: 100%;
+  background-color: rgb(32, 33, 34);
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  gap: 5px;
+  color: white;
+}
+
+#page5-left {
+  height: 100%;
+  width: 40%;
+
+  display: flex;
+  justify-content: center;
+  align-items: flex-start;
+  flex-direction: column;
+}
+
+#page5-logo {
+  height: 100px;
+  width: 100%;
+}
+#page5-logo h1 {
+  padding: 0px 40px;
+  font-size: 5rem;
+}
+#page5-para {
+  height: 100px;
+  width: 80%;
+}
+#page5-para p {
+  padding: 0px 40px;
+}
+#page5-right {
+  height: 100%;
+  width: 50%;
+  /* border: 2px solid black; */
+
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  gap: 5px;
+}
+
+.page5-parts {
+  height: 50%;
+  width: 30%;
+
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  flex-direction: column;
+  gap: 20px;
+}
+.page5-part-heading h1 {
+  font-size: 2rem;
+}
+.page5-lists {
+  /* background-color: yellow; */
+  width: 100%;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  flex-direction: column;
+  gap: 9px;
+}
+.page5-lists h4 {
+  font-weight: 500;
 }
