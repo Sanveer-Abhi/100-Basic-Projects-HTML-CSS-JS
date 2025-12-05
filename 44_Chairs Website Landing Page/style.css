@@ -10,7 +10,7 @@ body {
   min-height: 100vh;
   width: 100%;
   /* overflow: hidden; */
-  /* animation: website-appear-animation 1s ease-in 1; */
+  animation: website-appear-animation 1s ease-in 1;
 }
 @keyframes website-appear-animation {
   0% {
