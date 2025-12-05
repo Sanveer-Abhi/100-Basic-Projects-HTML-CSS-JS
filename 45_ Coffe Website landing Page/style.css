@@ -1,0 +1,360 @@
+/* Basic CSS Reset */
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
+body {
+  font-family: "Segoe UI", Tahoma, Geneva, Verdana, sans-serif;
+  background-color: black;
+  color: white;
+  height: 100vh;
+  width: 100%;
+}
+
+#page1 {
+  height: 110vh;
+  width: 100%;
+  /* border-bottom: 2px solid white; */
+}
+/* navbar */
+#navbar-container {
+  height: 10vh;
+  width: 100%;
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  padding: 0 10%;
+}
+#nav-logo {
+  height: 100%;
+  width: 20%;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+#nav-items {
+  height: 100%;
+  width: 50%;
+  display: flex;
+  justify-content: space-around;
+  align-items: center;
+}
+#nav-items span {
+  font-size: 1.2rem;
+  font-weight: 600;
+}
+
+/* page1 main part */
+#page1-content-container {
+  height: 90vh;
+  width: 100%;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  flex-direction: column;
+}
+.page1-headings {
+  height: 20%;
+  width: 100%;
+  display: flex;
+  justify-content: center;
+  align-items: flex-end;
+}
+.page1-headings h1 {
+  font-size: 3rem;
+}
+#page1-image-container {
+  height: 60%;
+  width: 100%;
+  display: flex;
+  justify-content: center;
+  align-items: flex-end;
+}
+#page1-image {
+  height: 360px;
+  width: 360px;
+  border-radius: 50%;
+  background: url(assets/0.png) no-repeat center/cover;
+  background-color: red;
+}
+
+/* page1 button part */
+#page1-button-container {
+  height: 10vh;
+  width: 100%;
+  display: flex;
+  justify-content: center;
+  align-items: flex-end;
+  /* border: 3px solid green; */
+}
+
+#page1-button-container button {
+  height: 40px;
+  width: 150px;
+  background-color: rgb(248, 186, 110);
+  border: none;
+  border-radius: 5px;
+}
+
+/* Pageee 2 Start here */
+#page2 {
+  height: 100vh;
+  width: 100%;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  gap: 60px;
+}
+
+#page2-left {
+  height: 100%;
+  width: 35%;
+
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+#page2-image {
+  height: 360px;
+  width: 360px;
+  border-radius: 50%;
+  background: url(assets/0.png) no-repeat center/cover;
+  background-color: red;
+}
+#page2-right {
+  height: 90%;
+  width: 60%;
+  display: flex;
+  justify-content: flex-end;
+  align-items: center;
+}
+#heading-line {
+  height: 35%;
+  border-top: 5px solid white;
+  width: 20%;
+  /* background-color: white; */
+}
+#page2-content {
+  /* background-color: yellow; */
+  height: 50%;
+  width: 80%;
+  display: flex;
+  justify-content: flex-start;
+  align-items: flex-start;
+  flex-direction: column;
+  padding: 0px 20px;
+}
+#page2-content h1 {
+  height: 30%;
+  font-size: 5rem;
+}
+#page2-content p {
+  height: 30%;
+  width: 80%;
+  font-size: 1.1rem;
+}
+#page2-content button {
+  height: 40px;
+  width: 150px;
+  background-color: rgb(248, 186, 110);
+  border: none;
+  border-radius: 5px;
+}
+
+/* Pageee 3 Starts here */
+
+#page3 {
+  height: 90vh;
+  width: 100%;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+#page3-right {
+  height: 100%;
+  width: 35%;
+
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+#page3-image {
+  height: 360px;
+  width: 360px;
+  border-radius: 50%;
+  background: url(assets/0.png) no-repeat center/cover;
+  background-color: red;
+}
+#page3-left {
+  height: 100%;
+  width: 60%;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  /* background-color: red; */
+}
+
+#page3-content {
+  /* background-color: yellow; */
+  height: 70%;
+  width: 80%;
+  display: flex;
+  justify-content: flex-start;
+  align-items: flex-start;
+  flex-direction: column;
+  padding: 0px 20px;
+}
+#page3-content h1 {
+  height: 20%;
+  font-size: 4rem;
+}
+#page3-content p {
+  height: 20%;
+  width: 67%;
+  margin-top: 20px;
+  font-size: 1.1rem;
+}
+#page3-content button {
+  height: 40px;
+  width: 150px;
+  background-color: rgb(248, 186, 110);
+  border: none;
+  border-radius: 5px;
+}
+
+/* pagee 4 Starts here */
+
+#page4 {
+  height: 100vh;
+  width: 100%;
+  /* background-color: gray; */
+}
+#page4-heading {
+  height: 10vh;
+  width: 100%;
+  /* background-color: red; */
+}
+#page4-heading h1 {
+  padding: 0px 70px;
+  font-size: 4rem;
+}
+
+#page4-main-container {
+  height: 85vh;
+  margin-top: 5vh;
+  width: 100%;
+  /* background-color: lightgrey; */
+  display: flex;
+  justify-content: space-around;
+  align-items: center;
+}
+
+#page4-main-container .products {
+  height: 65vh;
+  width: 25%;
+  position: relative;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  flex-direction: column;
+  border: 3px solid orange;
+  /* background-color: orange; */
+}
+
+.page4-small-headings {
+  height: 20%;
+  width: 100%;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+.page4-catagories {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  flex-direction: column;
+  gap: 20px;
+  height: 50%;
+  width: 100%;
+}
+.page4-btn-container {
+  height: 20%;
+  width: 100%;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+
+.page4-btn-container button {
+  height: 40px;
+  width: 150px;
+  background-color: rgb(248, 186, 110);
+  border: none;
+  border-radius: 5px;
+}
+
+.page4-images {
+  height: 80px;
+  width: 80px;
+  background-color: red;
+  position: absolute;
+  top: -10%;
+  border-radius: 50%;
+  background: url(assets/0.png) no-repeat center/cover;
+}
+
+/* Page 5 Starts here */
+
+#page5 {
+  position: relative;
+  height: 60vh;
+  width: 100%;
+  padding: 0px 30px;
+  display: flex;
+  justify-content: space-around;
+  align-items: center;
+  /* background-color: gray; */
+}
+
+.page5-items {
+  height: 60%;
+  width: 30%;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  flex-direction: column;
+  gap: 20px;
+  /* background-color: red; */
+}
+
+.page5-items h1 {
+  font-size: 3rem;
+}
+.page5-items h1 span {
+  color: rgb(248, 186, 110);
+}
+.page5-items p {
+  width: 90%;
+  text-align: center;
+}
+
+#page5-footer-container {
+  height: 15%;
+  width: 100%;
+  position: absolute;
+  /* background-color: red; */
+  bottom: 0;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+#page5-footer-container p {
+  height: 100%;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  border-top: 2px solid rgb(248, 186, 110);
+  width: 60%;
+}
