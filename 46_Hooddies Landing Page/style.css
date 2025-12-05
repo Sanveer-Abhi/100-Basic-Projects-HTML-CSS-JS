@@ -421,11 +421,10 @@ body {
 }
 
 .top2 {
-  animation: button_bounce 3.5s ease-in-out none infinite;
+
   background: url(assets/div2.png) no-repeat center/cover;
 }
 .top3 {
-  animation: button_bounce 4s ease-in-out none infinite;
   background: url(assets/div6.png) no-repeat center/cover;
 }
 
