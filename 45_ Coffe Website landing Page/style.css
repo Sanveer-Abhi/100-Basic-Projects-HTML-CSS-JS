@@ -76,7 +76,9 @@ body {
   height: 360px;
   width: 360px;
   border-radius: 50%;
-  background: url(assets/0.png) no-repeat center/cover;
+  background: url(assets/1.png) no-repeat center/cover;
+  /* mix-blend-mode: multiply; */
+
   background-color: red;
 }
 
@@ -111,7 +113,6 @@ body {
 #page2-left {
   height: 100%;
   width: 35%;
-
   display: flex;
   justify-content: center;
   align-items: center;
@@ -120,8 +121,8 @@ body {
   height: 360px;
   width: 360px;
   border-radius: 50%;
-  background: url(assets/0.png) no-repeat center/cover;
-  background-color: red;
+  background: url(assets/2.png) no-repeat center/cover;
+  /* background-color: red; */
 }
 #page2-right {
   height: 90%;
@@ -181,11 +182,11 @@ body {
   align-items: center;
 }
 #page3-image {
-  height: 360px;
-  width: 360px;
+  height: 340px;
+  width: 340px;
   border-radius: 50%;
-  background: url(assets/0.png) no-repeat center/cover;
-  background-color: red;
+  background: url(assets/3.png) no-repeat center/cover;
+  /* background-color: red; */
 }
 #page3-left {
   height: 100%;
@@ -302,7 +303,17 @@ body {
   position: absolute;
   top: -10%;
   border-radius: 50%;
-  background: url(assets/0.png) no-repeat center/cover;
+}
+.page4-images:nth-child(1) {
+  background: url(assets/4.png) no-repeat center/cover;
+}
+.page4-images:nth-child(2) {
+  background: url(assets/pexels-chitokan-2183027-removebg-preview.png) no-repeat
+    center/cover;
+}
+.page4-images:nth-child(3) {
+  background: url(assets/pexels-chitokan-2183027-removebg-preview.png) no-repeat
+    center/cover;
 }
 
 /* Page 5 Starts here */

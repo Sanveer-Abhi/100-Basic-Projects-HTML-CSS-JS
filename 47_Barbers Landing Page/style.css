@@ -418,3 +418,186 @@ body {
   cursor: pointer;
   font-weight: 600;
 }
+/* ============================= */
+/* RESPONSIVE DESIGN — MOBILE */
+/* ============================= */
+
+@media (max-width: 768px) {
+  body {
+    padding: 0;
+  }
+
+  /* NAVBAR */
+  #navbar-container {
+    height: auto;
+    flex-direction: column;
+    gap: 10px;
+    padding: 10px 0;
+  }
+
+  #navbar-logo h1 {
+    font-size: 2rem;
+  }
+
+  #navbar-items-container {
+    width: 100%;
+    justify-content: center;
+    gap: 10px;
+  }
+
+  .nav-items {
+    padding: 8px 15px;
+    font-size: 0.9rem;
+  }
+
+  /* PAGE 1 */
+  #page1 {
+    padding: 0 5%;
+  }
+
+  #page1-main-container {
+    flex-direction: column;
+    height: auto;
+  }
+
+  #page1-left-part,
+  #page1-right-part {
+    width: 100%;
+    height: auto;
+    align-items: center;
+  }
+
+  #page1-heading {
+    font-size: 3rem;
+    text-align: center;
+  }
+
+  #page1-para {
+    width: 100%;
+    text-align: center;
+  }
+
+  #page1-button {
+    margin-top: 20px;
+  }
+
+  /* Page1 Images */
+  #page1-right-part {
+    height: 350px;
+  }
+
+  .page1-images {
+    width: 70%;
+    height: 60%;
+  }
+
+  .page1-image1 {
+    left: 20%;
+    top: 5%;
+  }
+
+  .page1-image2 {
+    left: 5%;
+    bottom: 5%;
+  }
+
+  /* PAGE 2 */
+  #page2 {
+    flex-direction: column-reverse;
+    text-align: center;
+    height: auto;
+    gap: 30px;
+    padding: 50px 5%;
+  }
+
+  #page2-left,
+  #page2-right {
+    width: 100%;
+  }
+
+  #page2-large-heading {
+    font-size: 3rem;
+  }
+
+  #page2-right {
+    height: 300px;
+  }
+
+  /* SOCIAL MEDIA */
+  #social-media-container {
+    flex-wrap: wrap;
+  }
+
+  .social-medias {
+    width: 45%;
+  }
+
+  /* PAGE 3 */
+  #page3 {
+    flex-direction: column;
+    height: auto;
+    gap: 30px;
+    text-align: center;
+    padding: 50px 5%;
+  }
+
+  #page3-left-part,
+  #page3-right-part {
+    width: 100%;
+  }
+
+  #page3-left-part {
+    height: 300px;
+  }
+
+  #page3-heading {
+    justify-content: center;
+    font-size: 3rem;
+  }
+
+  #page3-para {
+    width: 100%;
+  }
+
+  /* PAGE 4 */
+  #page4 {
+    height: auto;
+    padding: 50px 5%;
+  }
+
+  #page4-top {
+    align-items: center;
+    text-align: center;
+  }
+
+  #page4-large-heading {
+    font-size: 3rem;
+  }
+
+  #page4-bottom {
+    flex-direction: column;
+    gap: 30px;
+  }
+
+  .page4-item-boxes {
+    width: 100%;
+    height: auto;
+  }
+
+  .top-part {
+    height: 200px;
+  }
+
+  /* PAGE 5 */
+  #page5 {
+    flex-direction: column;
+    height: auto;
+    padding: 50px 5%;
+    gap: 40px;
+  }
+
+  .page5-boxes {
+    width: 100%;
+    gap: 5px;
+  }
+}
