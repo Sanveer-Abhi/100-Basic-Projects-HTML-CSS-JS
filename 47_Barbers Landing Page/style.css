@@ -106,13 +106,13 @@ body {
   background-color: red;
 }
 .page1-image1 {
-  background: url(assets/div7.png) no-repeat center/cover;
+  background: url(assets/Image2.jpeg) no-repeat center/cover;
   position: absolute;
   left: 50%;
   top: 5%;
 }
 .page1-image2 {
-  background: url(assets/div3.png) no-repeat center/cover;
+  background: url(assets/Image1.jpeg) no-repeat center/cover;
   position: absolute;
   bottom: 3%;
   left: 10%;
@@ -169,7 +169,7 @@ body {
   width: 150px;
 }
 #page2-right {
-  height: 60%;
+  height: 70%;
   width: 35%;
   display: flex;
   justify-content: center;
@@ -181,7 +181,7 @@ body {
   height: 100%;
   width: 100%;
   border-radius: 20px;
-  background: url(assets/div7.png) no-repeat center/cover;
+  background: url(assets/Image3.jpeg) no-repeat center/cover;
   background-color: red;
 }
 
@@ -251,7 +251,7 @@ body {
 }
 
 #page3-left-part {
-  height: 60%;
+  height: 70%;
   width: 35%;
   display: flex;
   justify-content: center;
@@ -263,7 +263,7 @@ body {
   height: 100%;
   width: 100%;
   border-radius: 20px;
-  background: url(assets/div3.png) no-repeat center/cover;
+  background: url(assets/Image4.jpeg) no-repeat center/cover;
   background-color: red;
 }
 #page3-right-part {
@@ -350,13 +350,13 @@ body {
 .top-part {
   height: 55%;
   width: 100%;
-  background: url(assets/div3.png) no-repeat center/cover;
+  background: url(assets/Image5.jpeg) no-repeat center/cover;
 }
 .top-2 {
-  background: url(assets/div1.png) no-repeat center/cover;
+  background: url(assets/Image6.jpeg) no-repeat center/cover;
 }
 .top-3 {
-  background: url(assets/div7.png) no-repeat center/cover;
+  background: url(assets/Image7.jpeg) no-repeat center/cover;
 }
 .bottom-part {
   height: 45%;
