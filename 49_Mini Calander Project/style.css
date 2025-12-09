@@ -1,0 +1,137 @@
+/* Basic CSS Reset */
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
+body {
+  font-family: "Segoe UI", Tahoma, Geneva, Verdana, sans-serif;
+  background-color: black;
+  color: black;
+  height: 100vh;
+  width: 100%;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+
+#heading {
+  position: absolute;
+  top: 5%;
+  color: white;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  gap: 10px;
+  height: 100px;
+  width: 300px;
+  /* background-color: red; */
+}
+#heading h1 {
+  font-size: 2.5em;
+  text-transform: uppercase;
+}
+#heading svg {
+  height: 70px;
+  width: 70px;
+  animation: rotate 4s linear infinite;
+}
+
+@keyframes rotate {
+  0% {
+    transform: rotateY(0deg);
+  }
+  100% {
+    transform: rotateY(360deg);
+  }
+}
+
+#container {
+  height: 300px;
+  width: 600px;
+  display: flex;
+  flex-direction: column;
+  justify-content: space-evenly;
+  background-color: #fff;
+}
+#month {
+  font-size: 1.5em;
+  height: 25%;
+  width: 100%;
+  color: white;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  background-color: lightseagreen;
+}
+
+#weekDay {
+  height: 25%;
+  width: 100%;
+  font-size: 2em;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+#date {
+  height: 25%;
+  width: 100%;
+
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  font-size: 3rem;
+  font-weight: bold;
+}
+
+#year {
+  height: 25%;
+  width: 100%;
+  font-size: 1.4em;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+
+@media (max-width: 400px) {
+  body {
+
+    background: linear-gradient(
+      90deg,
+      #121216 0%,
+      #121216 7.692%,
+      #16171a calc(7.692% + 1px),
+      #16171a 15.385%,
+      #1a1b1f calc(15.385% + 1px),
+      #1a1b1f 23.077%,
+      #1f2023 calc(23.077% + 1px),
+      #1f2023 30.769%,
+      #232427 calc(30.769% + 1px),
+      #232427 38.462%,
+      #27282b calc(38.462% + 1px),
+      #27282b 46.154%,
+      #2b2c2f calc(46.154% + 1px),
+      #2b2c2f 53.846%,
+      #2f3033 calc(53.846% + 1px),
+      #2f3033 61.538%,
+      #323337 calc(61.538% + 1px),
+      #323337 69.231%,
+      #36373a calc(69.231% + 1px),
+      #36373a 76.923%,
+      #38393d calc(76.923% + 1px),
+      #38393d 84.615%,
+      #3b3c40 calc(84.615% + 1px),
+      #3b3c40 92.308%,
+      #3d3e42 calc(92.308% + 1px) 100%
+    );
+  }
+  #container {
+    height: 40%;
+    width: 80%;
+  }
+  #month {
+    background-color: orange;
+    color: black;
+  }
+}
